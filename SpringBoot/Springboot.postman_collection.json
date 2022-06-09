@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "91509bf4-e9c6-44dd-a95f-17c602b3374a",
+		"name": "Springboot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ProductAPI",
+			"item": [
+				{
+					"name": "Save Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"P002\",\r\n    \"productName\" : \"BMW I8\",\r\n    \"slug\" : \"BMW\",\r\n    \"description\" : \"Lorem ipsum\",\r\n    \"detail\" : \"Lorem ipsum\",\r\n    \"price\" : 200.0,\r\n    \"thumbnail\" : \"\",\r\n    \"producer\" : \"BMW\",\r\n    \"deletedAt\" : \"\",\r\n    \"createdBy\" : \"Quoc Viet\",\r\n    \"updatedBy\" : \"\",\r\n    \"deletedBy\" : \"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8888/api/v1/products"
+					},
+					"response": []
+				},
+				{
+					"name": "Find All Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8888/api/v1/products"
+					},
+					"response": []
+				},
+				{
+					"name": "Find by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8888/api/v1/products/P001"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\" : \"Audi Q5\",\r\n    \"slug\" : \"Audi\",\r\n    \"description\" : \"Lorem ipsum\",\r\n    \"detail\" : \"Lorem ipsum\",\r\n    \"price\" : 1000.0,\r\n    \"thumbnail\" : \"\",\r\n    \"producer\" : \"Audi\",\r\n    \"deletedAt\" : \"\",\r\n    \"createdBy\" : \"Quoc Viet\",\r\n    \"updatedBy\" : \"Quoc Viet\",\r\n    \"deletedBy\" : \"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8888/api/v1/products/P001"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8888/api/v1/products/P001"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
